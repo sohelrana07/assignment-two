@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --color-primary: #e95a08;
+  --extra-font: "Noto Serif", serif;
+  --text-gray: rgba(0, 0, 0, 0.5);
+}
+
+/* shared section style here */
+.display-flex {
+  display: flex;
+}
+
+/* width section here */
+header,
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Navigation bar section style here */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  border: 2px solid tomato;
+}
+
+.logo {
+  max-width: 135px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-manu ul li {
+  list-style: none;
+  margin-right: 48px;
+}
+
+.nav-manu a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link {
+  font-weight: 700;
+}
+
+.nav-manu .nav-link2 {
+  color: #8987a1;
+}
+
+/* banner section style here */
+.banner {
+  height: 461px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  /* border: 2px solid tomato; */
+}
+
+.banner-content {
+  max-width: 570px;
+  /* border: 2px solid tomato; */
+}
+
+.banner-title {
+  font-size: 4.06rem;
+  font-weight: 700;
+  font-family: var(--extra-font);
+}
+
+.banner-content span {
+  color: var(--color-primary);
+  font-family: var(--extra-font);
+}
+
+.banner-description {
+  font-size: 1.37rem;
+  color: var(--text-gray);
+  margin-top: 13px;
+}
+
+.banner-image {
+  max-width: 570px;
+  /* border: 2px solid tomato; */
+}
+
+.banner-image img {
+  width: 100%;
+  display: block;
+}
+
+
+/* small device responsive media query */
+@media screen and (max-width: 576px) {
+  .navbar{
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .logo{
+    max-width: 80px;
+    max-height: 50px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .nav-manu ul{
+    display: none;
+  }
+
+  .banner{
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 28px;
+    margin-top: 28px;
+  }
+
+  .banner-content{
+    max-width: 95%;
+  }
+
+  .banner-title{
+    font-size: 2.5rem;
+  }
+}
