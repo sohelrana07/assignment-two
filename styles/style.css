@@ -137,9 +137,6 @@ section {
 }
 
 /* Our Plants section style here */
-.our-plants {
-  margin-bottom: 200px;
-}
 
 .plants-card-container {
   display: grid;
@@ -175,12 +172,65 @@ section {
   margin-top: 30px;
 }
 
+/* plants lover section style here */
+.plants-lover {
+  margin-top: 210px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.plants-lover-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid tomato; */
+}
+
+.plants-lover-image {
+  max-width: 540px;
+  max-height: 597px;
+}
+
+.plants-lover-image img {
+  width: 100%;
+}
+
+.plants-lover-content {
+  max-width: 540px;
+  /* border: 2px solid tomato; */
+}
+
+.plants-lover-content .title {
+  font-size: 3.12rem;
+  font-weight: 700;
+  font-family: var(--extra-font);
+  margin-bottom: 10px;
+}
+
+.plants-lover-content ul li {
+  font-size: 1.37rem;
+  color: var(--text-gray);
+  text-align: justify;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.plants-image {
+  max-width: 286px;
+  max-height: 286px;
+  position: absolute;
+  top: -127px;
+  left: 347px;
+}
+
+.plants-image img {
+  width: 100%;
+}
+
 /* small device responsive media query */
 @media screen and (max-width: 576px) {
   .navbar {
-    max-width: 95%;
-    margin: 0 auto;
-    margin-top: 30px;
+    max-width: 90%;
   }
 
   .logo {
@@ -238,5 +288,26 @@ section {
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
+  }
+
+  .plants-lover{
+    max-width: 90%;
+  }
+
+  .plants-lover-container{
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .plants-image{
+    display: none;
+  }
+
+  .plants-lover-content .title{
+    font-size: 2.5rem;
+  }
+
+  .plants-lover-content ul li{
+    margin-left: 22px;
   }
 }
