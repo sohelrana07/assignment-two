@@ -106,13 +106,10 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 120px;
-  margin-bottom: 120px;
-  /* border: 2px solid tomato; */
 }
 
 .banner-content {
   max-width: 570px;
-  /* border: 2px solid tomato; */
 }
 
 .banner-title {
@@ -134,7 +131,6 @@ footer {
 
 .banner-image {
   max-width: 570px;
-  /* border: 2px solid tomato; */
 }
 
 .banner-image img {
@@ -143,6 +139,9 @@ footer {
 }
 
 /* Our Plants section style here */
+.our-plants {
+  margin-top: 120px;
+}
 
 .plants-card-container {
   display: grid;
@@ -179,6 +178,7 @@ footer {
 }
 
 /* plants lover section style here */
+
 .plants-lover {
   margin-top: 210px;
   position: relative;
@@ -188,7 +188,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid tomato; */
 }
 
 .plants-lover-image {
@@ -202,7 +201,6 @@ footer {
 
 .plants-lover-content {
   max-width: 540px;
-  /* border: 2px solid tomato; */
 }
 
 .plants-lover-content .title {
@@ -230,15 +228,12 @@ footer {
 
 .plants-image img {
   width: 100%;
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* challenges section style here */
 .challenges {
   margin-top: 133px;
-}
-
-.display-hidden {
-  display: none;
 }
 
 .challenges .header-section {
@@ -292,6 +287,11 @@ footer {
   margin-top: 120px;
 }
 
+.input-section {
+  max-width: 800px;
+  width: 100%;
+}
+
 .join-title {
   font-size: 3.12rem;
   font-weight: 700;
@@ -305,8 +305,9 @@ footer {
   outline: none;
   padding: 8px 20px;
   background-color: white;
-  width: 644px;
+  width: 100%;
   height: 50px;
+  position: relative;
 }
 
 .input-form input::placeholder {
@@ -315,7 +316,8 @@ footer {
 
 .input-form .submit-btn {
   padding: 18px 50px;
-  margin-left: -24px;
+  position: absolute;
+  margin-left: -164px;
 }
 
 /* footer section style here */
@@ -325,7 +327,6 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 2px solid tomato;
 }
 
 .footer-section {
@@ -333,12 +334,10 @@ footer {
   height: 248px;
   display: flex;
   justify-content: space-between;
-  border: 2px solid tomato;
 }
 
 .footer-logo {
   max-width: 360px;
-  border: 2px solid tomato;
 }
 
 .footer-logo figure {
@@ -356,7 +355,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  border: 2px solid tomato;
 }
 
 .footer-section ul li {
@@ -373,13 +371,12 @@ footer {
 }
 
 .social-icon {
-  max-width: 216px;
+  max-width: fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  border: 2px solid tomato;
 }
 
 /* small device responsive media query */
@@ -427,6 +424,10 @@ footer {
     text-align: justify;
   }
 
+  .our-plants {
+    margin-top: 65px;
+  }
+
   .header-section {
     max-width: 90%;
   }
@@ -448,6 +449,7 @@ footer {
 
   .plants-lover {
     max-width: 90%;
+    margin-top: 40px;
   }
 
   .plants-lover-container {
@@ -467,8 +469,12 @@ footer {
     margin-left: 22px;
   }
 
+  .join {
+    height: 450px;
+  }
+
   .join .input-section {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .join-title {
@@ -476,18 +482,20 @@ footer {
   }
 
   .input-form input {
-    width: auto;
+    width: 100%;
   }
 
   .input-form .submit-btn {
-    padding: 18px 40px;
-    margin-left: -20px;
+    padding: 18px 36px;
+    margin-left: -135px;
+    margin-top: -1px;
   }
 
   footer {
+    max-width: 90%;
     height: auto;
     display: block;
-    padding: 50px 150px 50px 20px;
+    padding: 40px 0;
   }
 
   .footer-logo {
@@ -496,7 +504,7 @@ footer {
 
   .footer-section {
     height: auto;
-    width: 100%;
+    width: 85%;
     flex-direction: column;
     gap: 20px;
   }
