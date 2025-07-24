@@ -18,9 +18,42 @@
   display: flex;
 }
 
+.btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+  padding: 20px 50px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-section {
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.header-title {
+  font-size: 3.12rem;
+  font-weight: 700;
+  font-family: var(--extra-font);
+}
+
+.header-title span {
+  color: var(--color-primary);
+  font-family: var(--extra-font);
+}
+
+.header-section .sub-title {
+  max-width: 888px;
+  font-size: 1.37rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-top: 16px;
+}
+
 /* width section here */
-header,
-main {
+.navbar,
+section {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -31,7 +64,7 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  border: 2px solid tomato;
+  /* border: 2px solid tomato; */
 }
 
 .logo {
@@ -103,17 +136,55 @@ main {
   display: block;
 }
 
+/* Our Plants section style here */
+.our-plants {
+  margin-bottom: 200px;
+}
+
+.plants-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-top: 50px;
+}
+
+.plants-card {
+  max-width: 270px;
+  text-align: center;
+}
+
+.plants-card img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.plants-abouts .name {
+  font-size: 1.37rem;
+  font-weight: 500;
+}
+
+.plants-abouts .cost {
+  font-size: 1.37rem;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.plants-card button {
+  width: 100%;
+  margin-top: 30px;
+}
 
 /* small device responsive media query */
 @media screen and (max-width: 576px) {
-  .navbar{
+  .navbar {
     max-width: 95%;
     margin: 0 auto;
     margin-top: 30px;
   }
 
-  .logo{
-    max-width: 80px;
+  .logo {
+    max-width: 90px;
     max-height: 50px;
   }
 
@@ -121,22 +192,51 @@ main {
     width: 100%;
   }
 
-  .nav-manu ul{
+  .nav-manu ul {
     display: none;
   }
 
-  .banner{
+  .nav-manu p {
+    font-size: 1.12rem;
+    font-weight: 700;
+  }
+
+  .banner {
     flex-direction: column-reverse;
     height: auto;
     gap: 28px;
     margin-top: 28px;
   }
 
-  .banner-content{
-    max-width: 95%;
+  .banner-content {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
-  .banner-title{
+  .banner-title {
     font-size: 2.5rem;
+  }
+
+  .banner-description {
+    text-align: justify;
+  }
+
+  .header-section {
+    width: 90%;
+  }
+
+  .header-title {
+    font-size: 2.5rem;
+  }
+
+  .header-section .sub-title {
+    width: 95%;
+  }
+
+  .plants-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
   }
 }
