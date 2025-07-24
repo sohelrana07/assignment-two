@@ -229,6 +229,16 @@ footer {
 .plants-image img {
   width: 100%;
   filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* challenges section style here */
@@ -277,7 +287,7 @@ footer {
 /* join section style here */
 .join {
   height: 533px;
-  background-image: url("../assets/news-letter-bg.png");
+  background-image: linear-gradient(rgba(7, 51, 79, 0.4)),url("../assets/news-letter-bg.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -400,7 +410,6 @@ footer {
   }
 
   .nav-manu p {
-    font-size: 1.12rem;
     font-weight: 700;
   }
 
