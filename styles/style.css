@@ -58,6 +58,12 @@ section {
   margin: 0 auto;
 }
 
+.join,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /* Navigation bar section style here */
 .navbar {
   display: flex;
@@ -231,7 +237,7 @@ section {
   margin-top: 133px;
 }
 
-.display-hidden{
+.display-hidden {
   display: none;
 }
 
@@ -239,7 +245,7 @@ section {
   margin-bottom: 120px;
 }
 
-.card-layout{
+.card-layout {
   display: flex;
   /* justify-content: space-between; */
   gap: 25px;
@@ -257,7 +263,7 @@ section {
 
 .left-images img {
   width: 100%;
-  height: calc(100%)/2;
+  height: calc(100%) / 2;
   border: none;
   border-radius: 22px;
 }
@@ -274,10 +280,9 @@ section {
 }
 
 /* join section style here */
-.join{
-  max-width: 1440px;
+.join {
   height: 533px;
-  background-image: url('../assets/news-letter-bg.png');
+  background-image: url("../assets/news-letter-bg.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -287,7 +292,7 @@ section {
   margin-top: 120px;
 }
 
-.join-title{
+.join-title {
   font-size: 3.12rem;
   font-weight: 700;
   font-family: var(--extra-font);
@@ -295,7 +300,7 @@ section {
   margin-bottom: 23px;
 }
 
-.input-form input{
+.input-form input {
   border: none;
   outline: none;
   padding: 8px 20px;
@@ -304,19 +309,84 @@ section {
   height: 50px;
 }
 
-.input-form input::placeholder{
+.input-form input::placeholder {
   color: var(--text-gray);
 }
 
-.input-form .submit-btn{
+.input-form .submit-btn {
   padding: 18px 50px;
-  margin-left: -25px;
+  margin-left: -24px;
+}
+
+/* footer section style here */
+footer {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid tomato;
+}
+
+.footer-section {
+  width: 77.78%;
+  height: 248px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid tomato;
+}
+
+.footer-logo {
+  max-width: 360px;
+  border: 2px solid tomato;
+}
+
+.footer-logo figure {
+  width: 100%;
+}
+
+.footer-logo p {
+  font-size: 1.37rem;
+  color: var(--text-gray);
+  text-align: justify;
+  margin-top: 16px;
+}
+
+.footer-manu {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  border: 2px solid tomato;
+}
+
+.footer-section ul li {
+  list-style: none;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  max-width: 216px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border: 2px solid tomato;
 }
 
 /* small device responsive media query */
 @media screen and (max-width: 576px) {
   .navbar {
     max-width: 90%;
+    align-items: flex-end;
   }
 
   .logo {
@@ -333,7 +403,7 @@ section {
   }
 
   .nav-manu p {
-    /* font-size: 1.12rem; */
+    font-size: 1.12rem;
     font-weight: 700;
   }
 
@@ -350,7 +420,7 @@ section {
   }
 
   .banner-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .banner-description {
@@ -358,20 +428,20 @@ section {
   }
 
   .header-section {
-    width: 90%;
+    max-width: 90%;
   }
 
   .header-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .header-section .sub-title {
-    width: 97%;
+    max-width: 97%;
   }
 
   .plants-card-container {
     grid-template-columns: repeat(2, 1fr);
-    width: 90%;
+    max-width: 90%;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -390,22 +460,44 @@ section {
   }
 
   .plants-lover-content .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .plants-lover-content ul li {
     margin-left: 22px;
   }
 
-  .join .input-section{
+  .join .input-section {
     max-width: 90%;
   }
 
-  .join-title{
+  .join-title {
     font-size: 2rem;
   }
 
-  .input-form input{
-    width: 300px;
+  .input-form input {
+    width: auto;
+  }
+
+  .input-form .submit-btn {
+    padding: 18px 40px;
+    margin-left: -20px;
+  }
+
+  footer {
+    height: auto;
+    display: block;
+    padding: 50px 150px 50px 20px;
+  }
+
+  .footer-logo {
+    max-width: 100%;
+  }
+
+  .footer-section {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
   }
 }
