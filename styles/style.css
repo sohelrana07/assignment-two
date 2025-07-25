@@ -31,6 +31,10 @@ body {
   cursor: pointer;
 }
 
+.btn-primary:hover{
+  background-color: #e95a08e5;
+}
+
 .header-section {
   margin: 0 auto;
   justify-items: center;
@@ -181,7 +185,6 @@ footer {
 }
 
 /* plants lover section style here */
-
 .plants-lover {
   margin-top: 210px;
   position: relative;
@@ -232,7 +235,7 @@ footer {
 .plants-image img {
   width: 100%;
   filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
-  animation: spin 15s linear infinite;
+  animation: spin 16s linear infinite;
 }
 
 @keyframes spin {
@@ -615,11 +618,11 @@ footer {
 
   .footer-logo figure {
     max-width: 180px;
-    min-height: 109px;
   }
 
   .footer-logo figure img {
     width: 100%;
+    height: 100%;
   }
 
   .footer-section {
@@ -627,5 +630,6 @@ footer {
     height: auto;
     flex-direction: column;
     gap: 20px;
+    padding-right: 60px;
   }
 }
