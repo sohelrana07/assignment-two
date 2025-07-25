@@ -9,8 +9,12 @@
 
 :root {
   --color-primary: #e95a08;
-  --extra-font: "Noto Serif", serif;
+  --font-secondary: "Noto Serif", serif;
   --text-gray: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: #f5f8ff;
 }
 
 /* shared section style here */
@@ -35,12 +39,12 @@
 .header-title {
   font-size: 3.12rem;
   font-weight: 700;
-  font-family: var(--extra-font);
+  font-family: var(--font-secondary);
 }
 
 .header-title span {
   color: var(--color-primary);
-  font-family: var(--extra-font);
+  font-family: var(--font-secondary);
 }
 
 .header-section .sub-title {
@@ -70,7 +74,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  /* border: 2px solid tomato; */
 }
 
 .logo {
@@ -115,12 +118,12 @@ footer {
 .banner-title {
   font-size: 4.06rem;
   font-weight: 700;
-  font-family: var(--extra-font);
+  font-family: var(--font-secondary);
 }
 
 .banner-content span {
   color: var(--color-primary);
-  font-family: var(--extra-font);
+  font-family: var(--font-secondary);
 }
 
 .banner-description {
@@ -206,7 +209,7 @@ footer {
 .plants-lover-content .title {
   font-size: 3.12rem;
   font-weight: 700;
-  font-family: var(--extra-font);
+  font-family: var(--font-secondary);
   margin-bottom: 10px;
 }
 
@@ -299,7 +302,7 @@ footer {
 .left-title {
   font-size: 1.25rem;
   font-weight: 700;
-  font-family: var(--extra-font);
+  font-family: var(--font-secondary);
   color: white;
 }
 
@@ -326,7 +329,7 @@ footer {
 .right-title {
   font-size: 2.5rem;
   font-weight: 600;
-  font-family: var(--extra-font);
+  font-family: var(--font-secondary);
   color: white;
 }
 
@@ -360,7 +363,7 @@ footer {
 .join-title {
   font-size: 3.12rem;
   font-weight: 700;
-  font-family: var(--extra-font);
+  font-family: var(--font-secondary);
   color: white;
   margin-bottom: 23px;
 }
@@ -509,7 +512,7 @@ footer {
   }
 
   .card7,
-  .card8{
+  .card8 {
     display: none;
   }
 
@@ -610,12 +613,12 @@ footer {
     max-width: 100%;
   }
 
-  .footer-logo figure{
+  .footer-logo figure {
     max-width: 180px;
     min-height: 109px;
   }
 
-  .footer-logo figure img{
+  .footer-logo figure img {
     width: 100%;
   }
 
