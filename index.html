@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Font awesome cdn here -->
+    <link rel="shortcut icon" href="assets/icons8.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -17,7 +18,7 @@
       <!-- Navigation bar start here -->
       <nav class="navbar">
         <div class="logo">
-          <img src="assets/logo.png" alt="" />
+          <img src="assets/logo.png" alt="webpage logo" />
         </div>
         <!-- Navigation manu here -->
         <div class="nav-manu display-flex">
@@ -47,7 +48,7 @@
           </p>
         </div>
         <div class="banner-image">
-          <img src="assets/hero-flower.png" alt="" />
+          <img src="assets/hero-flower.png" alt="banner photo" />
         </div>
       </section>
     </header>
@@ -64,8 +65,8 @@
         </div>
         <div class="plants-card-container">
           <!-- card1 -->
-          <div class="plants-card">
-            <img src="assets/sample-flower-image.png" alt="" />
+          <div onclick="welcome()" class="plants-card">
+            <img src="assets/sample-flower-image.png" alt="flower image" />
             <div class="plants-abouts">
               <p class="name">Lily Blossom</p>
               <p class="cost">20 USD</p>
@@ -73,8 +74,8 @@
             <a href=""><button class="btn-primary">ADD TO CART</button></a>
           </div>
           <!-- card2 -->
-          <div class="plants-card">
-            <img src="assets/sample-flower-image.png" alt="" />
+          <div onclick="welcome()" class="plants-card">
+            <img src="assets/sample-flower-image.png" alt="flower image" />
             <div class="plants-abouts">
               <p class="name">Lily Blossom</p>
               <p class="cost">20 USD</p>
@@ -82,8 +83,8 @@
             <a href=""><button class="btn-primary">ADD TO CART</button></a>
           </div>
           <!-- card3 -->
-          <div class="plants-card">
-            <img src="assets/sample-flower-image.png" alt="" />
+          <div onclick="welcome()" class="plants-card">
+            <img src="assets/sample-flower-image.png" alt="flower image" />
             <div class="plants-abouts">
               <p class="name">Lily Blossom</p>
               <p class="cost">20 USD</p>
@@ -91,8 +92,8 @@
             <a href=""><button class="btn-primary">ADD TO CART</button></a>
           </div>
           <!-- card4 -->
-          <div class="plants-card">
-            <img src="assets/sample-flower-image.png" alt="" />
+          <div onclick="welcome()" class="plants-card">
+            <img src="assets/sample-flower-image.png" alt="flower image" />
             <div class="plants-abouts">
               <p class="name">Lily Blossom</p>
               <p class="cost">20 USD</p>
@@ -100,8 +101,8 @@
             <a href=""><button class="btn-primary">ADD TO CART</button></a>
           </div>
           <!-- card5 -->
-          <div class="plants-card">
-            <img src="assets/sample-flower-image.png" alt="" />
+          <div onclick="welcome()" class="plants-card">
+            <img src="assets/sample-flower-image.png" alt="flower image" />
             <div class="plants-abouts">
               <p class="name">Lily Blossom</p>
               <p class="cost">20 USD</p>
@@ -109,8 +110,8 @@
             <a href=""><button class="btn-primary">ADD TO CART</button></a>
           </div>
           <!-- card6 -->
-          <div class="plants-card">
-            <img src="assets/sample-flower-image.png" alt="" />
+          <div onclick="welcome()" class="plants-card">
+            <img src="assets/sample-flower-image.png" alt="flower image" />
             <div class="plants-abouts">
               <p class="name">Lily Blossom</p>
               <p class="cost">20 USD</p>
@@ -118,8 +119,8 @@
             <a href=""><button class="btn-primary">ADD TO CART</button></a>
           </div>
           <!-- card7 -->
-          <div class="plants-card">
-            <img src="assets/sample-flower-image.png" alt="" />
+          <div onclick="welcome()" class="plants-card card7">
+            <img src="assets/sample-flower-image.png" alt="flower image" />
             <div class="plants-abouts">
               <p class="name">Lily Blossom</p>
               <p class="cost">20 USD</p>
@@ -127,8 +128,8 @@
             <a href=""><button class="btn-primary">ADD TO CART</button></a>
           </div>
           <!-- card8 -->
-          <div class="plants-card">
-            <img src="assets/sample-flower-image.png" alt="" />
+          <div onclick="welcome()" class="plants-card card8">
+            <img src="assets/sample-flower-image.png" alt="flower image" />
             <div class="plants-abouts">
               <p class="name">Lily Blossom</p>
               <p class="cost">20 USD</p>
@@ -141,11 +142,11 @@
       <!-- plants lover section start here -->
       <section class="plants-lover">
         <figure class="plants-image">
-          <img src="assets/trusted-badge.png" alt="" />
+          <img src="assets/trusted-badge.png" alt="trusted badge" />
         </figure>
         <div class="plants-lover-container">
           <div class="plants-lover-image">
-            <img src="assets/flower-store.png" alt="" />
+            <img src="assets/flower-store.png" alt="flower store image" />
           </div>
           <div class="plants-lover-content">
             <h3 class="title">Flower & Plants Lover</h3>
@@ -156,14 +157,13 @@
                 wide variety of fresh.
               </li>
               <li>
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
+                Fresh blooms handpicked daily to bring nature’s beauty and
+                vibrant colors to your special moments and everyday joys.
               </li>
               <li>
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
+                Experience the freshest flowers handpicked to add color,
+                fragrance, and heartfelt emotion to all your celebrations and
+                everyday moments.
               </li>
             </ul>
           </div>
@@ -266,5 +266,11 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function welcome() {
+        alert("Get Discount Code : 5122004");
+      }
+    </script>
   </body>
 </html>

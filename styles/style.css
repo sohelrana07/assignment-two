@@ -383,6 +383,7 @@ footer {
   padding: 18px 50px;
   position: absolute;
   margin-left: -164px;
+  margin-top: -1px;
 }
 
 /* footer section style here */
@@ -507,6 +508,11 @@ footer {
     margin-top: 50px;
   }
 
+  .card7,
+  .card8{
+    display: none;
+  }
+
   .plants-lover {
     max-width: 90%;
     margin-top: 41px;
@@ -591,9 +597,8 @@ footer {
   }
 
   .input-form .submit-btn {
-    padding: 18px 36px;
-    margin-left: -135px;
-    margin-top: -1px;
+    padding: 18px 30px;
+    margin-left: -123px;
   }
 
   footer {
@@ -605,11 +610,19 @@ footer {
     max-width: 100%;
   }
 
+  .footer-logo figure{
+    max-width: 180px;
+    min-height: 109px;
+  }
+
+  .footer-logo figure img{
+    width: 100%;
+  }
+
   .footer-section {
     width: 90%;
     height: auto;
     flex-direction: column;
     gap: 20px;
-    /* padding-right: 120px; */
   }
 }
